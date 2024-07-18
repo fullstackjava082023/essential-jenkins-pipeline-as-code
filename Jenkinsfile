@@ -12,6 +12,17 @@ pipeline {
                 echo "The link to jenkisfile: https://github.com/fullstackjava082023/essential-jenkins-pipeline-as-code/blob/main/Jenkinsfile"
             }
         }
+         stage('Get code from github') {
+            steps {
+                echo 'Pulling the files from github'
+                git branch: 'main', url: 'https://github.com/fullstackjava082023/hello-world-python.git'
+            }
+        }
+        stage('Run') {
+            steps {
+               sh 'python3 main.py'
+            }
+        }
     }
 }
 

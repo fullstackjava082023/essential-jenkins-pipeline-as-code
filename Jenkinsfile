@@ -8,7 +8,7 @@ pipeline {
         stage("Hello!\nPlease read the logs.") {
             steps {
                 echo "Hello! Thanks for visiting the Jenkins Essential Training repo on GitHub.\n\nIf you are working with the exercise files and see this message you are good!"
-
+                echo "The link to jenkisfile: https://github.com/fullstackjava082023/essential-jenkins-pipeline-as-code/blob/main/Jenkinsfile"
             }
         }
     }
